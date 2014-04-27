@@ -13,9 +13,9 @@ def exp1(x, n): #first algebric expression
 	li = []
 	for i in range(n): # loop n times with the for loop
 		x = 3.9 * x * (1 - x) #re-define the x var with new assignment
-		print (x) #print the value of x to user
+		#print (x) #print the value of x to user
 		li.append(x)
-	print(li)
+	#print(li)
 	return li
 
 def exp2(x, n): #second algebric expression
@@ -23,9 +23,9 @@ def exp2(x, n): #second algebric expression
 	li = []
 	for i in range(n): # loop n times with the for loop
 		x = 3.9 * (x - x * x) #re-define the x var with new assignment
-		print (x) #print the value of x to user
+		#print (x) #print the value of x to user
 		li.append(x)
-	print(li)
+	#print(li)
 	return li
 
 def exp3(x, n): #Third algebric expression
@@ -33,9 +33,9 @@ def exp3(x, n): #Third algebric expression
 	li = []
 	for i in range(n): # loop n times with the for loop
 		x = 3.9 * x - 3.9 * x * x #re-define the x var with new assignment
-		print (x) #print the value of x to user
+		#print (x) #print the value of x to user
 		li.append(x)
-	print(li)
+	#print(li)
 	return li
 
 def main(): # define the function main
