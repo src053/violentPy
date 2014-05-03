@@ -1,7 +1,7 @@
 #A program to convert Celsius temps to Fahrenheit
 
 def main():
-	print("This program will convert celsius to farenheit")
+	print("This program will convert farenheit to celcius")
 	count = 0
 	celsius = 0
 	
