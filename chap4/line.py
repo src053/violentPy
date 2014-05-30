@@ -34,7 +34,7 @@ def main():
 	length = round(math.sqrt((dx ** 2) + (dy ** 2)))
 
 
-
+	#display the slope and the length
 	Text(Point(1,9), slope).draw(win)
 	Text(Point(1,8), length).draw(win)
 	#Text(Point(1,7), p2X).draw(win)

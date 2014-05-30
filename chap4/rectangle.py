@@ -23,7 +23,7 @@ def main():
 
 	rectangle.draw(win)
 
-	#calculate and print the length and slope of the line
+	#calculate and print the area and perimeter of the rectangle
 	p1X = round(p1.getX())
 	p1Y = round(p1.getY())
 	p2X = round(p2.getX())
@@ -34,7 +34,7 @@ def main():
 	perimeter = round(2 * (dx + dy))
 
 
-	#display the slope and the length
+	#display the area and perimeter
 	Text(Point(1,9), area).draw(win)
 	Text(Point(1,8), perimeter).draw(win)
 
