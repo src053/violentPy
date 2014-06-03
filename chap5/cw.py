@@ -19,7 +19,7 @@ def main():
 	#var to count words
 	words = 0
 
-	#loop through each word and count the len
+	#loop through each line and enumerate the amount of words and letters
 	for w in allLines:
 		#remove the trailing \n
 		swap1 = w[:-1]
@@ -31,8 +31,10 @@ def main():
 
 		#test the value of spl
 		print(spl)
-		
+
 		words = words + len(spl)
+		
+		#loop through each word and count the letters
 		for l in swap1:
 			print(l)
 			letters = letters + 1
