@@ -11,12 +11,13 @@ def main():
 
 
 	#print the top row
-	print("-(-20)-(-10)-( 0)-(10)-(20)-(30)-(40)-(50)-(60)")
+	print("(-20)(-10)( 0)(10)(20)(30)(40)(50)(60)")
 	print("_______________________________________________")
 
 	while wind <= 50:
 		#var for temp
 		temp = -20
+		#var for all the calculations
 		row = []
 		#check that wind speed is above 3mph
 		if wind < 3:
@@ -25,12 +26,13 @@ def main():
 				row.append("NA  ")
 				i = i + 1
 			print(wind, ''.join(map(str, row)))
+			temp = temp + 10
 
 		else:
-			while temp <= -60:
+			while temp <= 60:
 				row.append(round(windChill(wind, temp)))
-				print(wind, '   '.join(map(str, row)))
 				temp = temp + 10
+			print(wind, ' '.join(map(str, row)))
 		wind = wind + 5
 
 
