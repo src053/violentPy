@@ -11,20 +11,22 @@ def main():
 	interest = eval(input("Please provide the interest rate: "))
 
 	#var for principal investment
-	investment = 1
+	principal = 1
 	#var to count the years
 	years = 0
+	#var for investment
+	investment = principal
 
 	#while iteration until investment var doubles
-	while investment <= 2:
+	while investment <= principal * 2:
 		#use the calculation function to calculate ivestment value
 		investment = calculation(interest, investment)
 		#debug line
-		print(investment)
+		print("{0:0.2f}".format(investment))
 		#increment the years var by one
 		years = years + 1
 
 	#print the years it took to double
-	print("It took {0} to double the investment".format(years))
+	print("It took {0} years to double the investment".format(years))
 
 main()
