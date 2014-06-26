@@ -30,11 +30,16 @@ def main():
 		if not os.access(filename, os.R_OK): #check if the file is readable
 			print '[-] ' + filename + ' access denied.' #print an error
 			exit(0) #exit the script
-	else:
+	elif len(sys.argv) == 1:
+		print 'in the elif loop'
 		print '[-] Usage: ' + str(sys.argv[0]) + ' <vuln filename>'
 		exit(0)
+
+	else:
+		print 'program still going'
 		portList = [21,22,25,80,110,443]
 		for x in range(147, 150):
+			print 'in the range loop'
 			ip = '192.168.95.' + str(x)
 			for port in portList:
 				banner = retBanner(ip, port)
